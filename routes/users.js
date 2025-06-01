@@ -90,4 +90,9 @@ router.delete("/:email", (req, res) => {
   res.send(`User with email ${email} deleted successfully`);//This line is to be replaced with actual return value
 });
 
+router.get("/",(req,res) => {
+  res.send(JSON.stringify({users}, null, 8));
+})
+
 module.exports=router;
+
